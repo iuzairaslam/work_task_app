@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import '../model/user_post_model.dart';
 
-class UserRepository {
+class UserRepository2 {
   @override
   Future<List<UserPostModel>> getRestaurantData() async {
     final response =
@@ -33,7 +33,7 @@ class UserRepository {
     if (response.statusCode == 200) {
       debugPrint(response.body.toString());
 
-      return response.body.toString();
+      return response.statusCode.toString();
     } else {
       print("Exception");
       throw Exception();

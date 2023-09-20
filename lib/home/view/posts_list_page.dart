@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../bloc/user/user_bloc.dart';
-import '../bloc/user/user_event.dart';
-import '../bloc/user/user_state.dart';
-import 'login_page.dart';
+
+import '../user/user_bloc.dart';
+import '../user/user_event.dart';
+import '../user/user_state.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
